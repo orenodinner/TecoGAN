@@ -67,7 +67,7 @@ if( runcase == 0 ): # download inference data, trained models
 elif( runcase == 1 ): # inference a trained model
     
     dirstr = './results/' # the place to save the results
-    testpre = ['calendar'] # the test cases
+    testpre = ['temp'] # the test cases
 
     if (not os.path.exists(dirstr)): os.mkdir(dirstr)
     
@@ -91,7 +91,7 @@ elif( runcase == 1 ): # inference a trained model
 
 elif( runcase == 2 ): # calculate all metrics, and save the csv files, should use png
 
-    testpre = ["calendar"] # just put more scenes to evaluate all of them
+    testpre = ["temp"] # just put more scenes to evaluate all of them
     dirstr = './results/'  # the outputs
     tarstr = './HR/'       # the GT
 
